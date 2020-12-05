@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> loglosc </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="codemirror.css">
+    <link rel="stylesheet" href="icecoder.css">
+    <script src="codemirror.js">  </script>
+    <script src="python.js">  </script>
+    
+    </head>
+    <body>
+     <textarea id="pyditor"> 
+     import datetime
+     dt = datetime.datetime.now()
+     print("hello and welcome")
+      </textarea>
+      <p> &nbsp; </p>
+      library
+      <textarea id="pyditorlib"> 
+    def texting(name):
+        print(name)
+      </textarea>
+     <script> 
+     var python = CodeMirror.fromTextArea(document.getElementById("pyditor"), {
+ 	 lineNumbers: true,
+ 	 theme: "icecoder",
+ 	 mode: "python"
+ 	 });
+ 	 var python = CodeMirror.fromTextArea(document.getElementById("pyditorlib"), {
+ 	 lineNumbers: true,
+ 	 theme: "icecoder",
+ 	 mode: "python"
+ 	 });
+      </script>
+    </body> 
+</html>
